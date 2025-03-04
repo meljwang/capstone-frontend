@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="dashboard-metrics">
+        <!--Average Bus Waiting Time: Headway Deviation / 2 (Assuming Random Arrivals of buses).-->
+        <div class="card">
+            <div class="card-header">
+                <h5>Average Bus Waiting Time</h5>
+                <h4 id="average-bus-waiting-time"></h4>
+            </div>
+            <div class="figure">
+                <canvas id="waitingTimeChart"></canvas>
+            </div>
+        </div>
+        <!--Headway Deviation: Headway Deviation = ∣Actual Headway − Scheduled Headway∣ -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Average Headway Deviation</h5>
+                <h4 id="average-headway-deviation"></h4>
+            </div>
+            <div class="figure">
+                <canvas id="headwayDeviationChart"></canvas>
+            </div>
+        </div>
+        <!--Average Bus Occupancy: Randomly generate numbers based on the peak location and timing?-->
+        <div class="card">
+            <div class="card-header">
+                <h5>Average Bus Occupancy</h5>
+                <h4>83%</h4>
+            </div>
+            <div class="figure">
+                <canvas id="occupancyChart"></canvas>
+            </div>
+        </div>
+        <!-- On-Time Performance: Percentage of buses arriving within a specified time window (e.g., ±5 minutes from schedule).-->
+        <div class="card">
+            <div class="card-header">
+                <h5>On-Time Performance</h5>
+                <h4>87%</h4>
+            </div>
+            <div class="figure">
+                <canvas id="onTimeChart"></canvas>
+            </div>
+        </div>
+        <!-- Average Bus Delay Time: Filter out buses that are behind schedule then calculate the average minutes behind schedule-->
+        <div class="card">
+            <div class="card-header">
+                <h5>Most Delayed Services</h5>
+                <h4>2.7 mins</h4>    
+            </div>
+            <div class="figure">
+                <canvas id="delayChart"></canvas>
+            </div>
+        </div>
+        <!-- Bus bunching rate: (Buses Arriving Faster than Scheduled Headway / Total Buses) * 100-->
+        <div class="card">
+            <div class="card-header">
+                <h5>Bus Bunching Rate</h5>
+                <h4 id="bus-bunching-rate"></h4> 
+            </div>
+            <div class="figure">
+                <canvas id="busBunchingChart"></canvas>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+</div>
+
+

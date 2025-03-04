@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Dashboard</title>
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo"> 
+                <img src="./assets/rapid-kl.png" alt="Rapid KL Logo" style="height: 100px; width: 140px;">
+            </div>
+            <ul>
+                <li><a href="/" data-route class="active">Dashboard</a></li>
+                <li><a href="/analytics" data-route>Analytics</a></li>
+                <li><a href="/simulation" data-route>Route Simulation</a></li>
+            </ul>
+        </div>
+        <div id="app-content">
+        </div> 
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./public/script.js"></script>
+</body>
+</html>
